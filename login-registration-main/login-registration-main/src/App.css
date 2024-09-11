@@ -1,0 +1,238 @@
+/* Ajustes generales para formularios */
+.auth-inner {
+  width: 450px;
+  margin: auto;
+  background: white; /* Fondo blanco */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+
+.auth-wrapper .form-control {
+  border: 1px solid #333; /* Borde negro */
+  color: #333;
+}
+
+.auth-wrapper .form-control:focus {
+  border-color: #f44336; /* Rojo */
+  box-shadow: none;
+}
+
+/* Estilos para el botón de registro */
+button[type="submit"] {
+  background-color: #f44336; /* Rojo */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #d32f2f; /* Tonalidad más oscura de rojo */
+}
+
+/* Títulos de los formularios */
+.auth-wrapper h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; /* Negro */
+}
+
+/* Links en el formulario */
+.forgot-password a {
+  color: #f44336; /* Rojo */
+}
+
+.forgot-password a:hover {
+  color: #d32f2f; /* Tonalidad más oscura de rojo */
+}
+
+/* Dashboard de administrador */
+.admin-dashboard {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border-left: 2px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+/* Lista del sidebar */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+/* Links y botones del sidebar */
+.sidebar ul li a,
+.sidebar ul li button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f44336; /* Rojo inactivo */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Iconos dentro del botón */
+.sidebar ul li a .icon,
+.sidebar ul li button .icon {
+  margin-right: 10px;
+}
+
+/* Estado activo */
+.sidebar ul li a.active,
+.sidebar ul li button.active {
+  background-color: black; /* Negro activo */
+  color: white;
+}
+
+/* Hover sobre los links y botones */
+.sidebar ul li a:hover,
+.sidebar ul li button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Contenido principal */
+.admin-content {
+  margin-right: 220px;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+/* Estilos adicionales para la tabla de usuarios */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 700px; /* Ajusta el tamaño máximo de la tabla */
+  margin: 0 auto;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f44336; /* Fondo rojo */
+  color: white;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+table td {
+  text-align: center;
+}
+
+/* Estilos para el campo de búsqueda */
+input[type="text"] {
+  width: calc(100% - 40px); /* Ajusta el tamaño del input */
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus {
+  border-color: #f44336; /* Rojo al enfocarse */
+}
+
+/* Estilos del formulario de inventario */
+.form-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+button {
+  background-color: #c8102e; /* Rojo */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #a30b25; /* Rojo más oscuro */
+}
+
+/* Estilos para la superposición */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
+}
